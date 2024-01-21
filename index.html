@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian</title>
+    <style>
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            height: 727px;
+            width: 500px;
+            grid-template-columns: 85px 225px 172px;
+            grid-template-rows: 150px 400px 50px 100px;
+            background-color: black;
+            gap: 9px;
+        }
+        .item{
+            background-color: #F0F1EC;
+        }
+        .red{
+            grid-column: span 2;
+            background-color: #E72F24;
+        }
+        .white2{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .gray{
+            background-color: #ACABBA;
+        }
+        .yellow{
+            background-color: #F9D01E;
+            grid-area: 4/1/5/2;
+        }
+        .blue{
+            background-color: #004592;
+            grid-area: 3/3/5/-1;
+            border-top: solid black 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item red"></div>
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item gray"></div>
+        <div class="item yellow"></div>
+        <div class="item blue"></div>
+        <div class="item white3"></div>
+
+    </div>
+</body>
+</html>
